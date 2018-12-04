@@ -1,32 +1,165 @@
-.App {
+.wrapper {
+  width: 100%;
+  min-height: 99vh;
+  margin: 0 auto;
+  /* border: 2px solid black; */
+  background-color: whitesmoke;
+}
+
+nav {
+  background-color: #000044;
+  min-height: 15vh;
+  text-align: center;
+  padding-top: 2em;
+
+}
+
+nav ul li {
+  display: inline;
+  padding-right: 3em;
+}
+
+.navLI {
+  list-style-type: none;
+}
+
+nav a, nav a:hover, .categoriesDiv nav {
+  color: white;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+nav a:hover  {
+border-top: 3px solid white;
+border-bottom: 3px solid white;
+}
+
+.homeDiv h1 {
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  font-size: 5.5em;
+  width: 70%;
+  color: #000044;
+  padding: 30px;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.howToDiv, .categoriesDiv {
+  width: 100%;
+  min-height: 390px;
+  /* border-top: 5px solid #000044; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.howToDiv h1, .categoriesDiv h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.howToDiv ul, .categoriesDiv ul{
+  margin-top: 3vh;
+  margin-left: 55vh;
+  font-size: 1.5em;
+}
+
+.UserInfoDiv img {
+  width: 108px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.questionBox {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 400px;
+  /* margin: 0 auto; */
+  width: 100%;
+  border-bottom: 5px solid #000044;
 }
 
-.App-link {
-  color: #61dafb;
+.questionBox p {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 1.6em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.answerButtonsDiv {
+  /* border: 2px solid */
+}
+
+.answerButtonsList {
+  list-style-type: none;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #bbb;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8p;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.loginForm {
+  position: relative;
+  margin-left: 500px;
+  margin-top: 60px;
+  font-size: 1.5em;
+}
+
+.loginForm input {
+  font-size: 1.5em;
+}
+
+.misterSubmitButton {
+  font-size: 1.4em;
 }
