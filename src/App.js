@@ -10,9 +10,11 @@ import Register from './components/layout/Register';
 
 import Login from './components/layout/Login';
 
+import Categories from './components/layout/Categories';
+
 import Trivia from './components/layout/Trivia';
 
-import Categories from './components/layout/Categories';
+import NewTrivia from './components/layout/NewTrivia';
 
 import './App.css';
 
@@ -29,9 +31,11 @@ class App extends Component {
 
             <Route path="/login" exact component= {Login} />
 
+            <Route path="/categories" exact component= {Categories} />
+
             <Route path="/trivia" exact component= {Trivia} />
 
-            <Route path="/categories" exact component= {Categories} />
+            <Route path="/newtrivia" exact component= {NewTrivia} />
 
           </div>
         </Router>

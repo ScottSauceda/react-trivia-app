@@ -1,7 +1,17 @@
 import { GET_QUESTIONS } from '../constants';
 
 const initialState = {
-    questions: null  
+    answer: '',
+    answersCount: {
+        true: 0,
+        false: 0
+    },
+    answerOptions: [],
+    counter: 0,
+    question: '',
+    questions: null,
+    questionId: 1,
+    result: ''
 }
 
 export default (state = initialState, action) => {
@@ -28,6 +38,7 @@ export default (state = initialState, action) => {
 
             updated.questions = questions
 
+            
             
 
             console.log('questions from trivia reducer')

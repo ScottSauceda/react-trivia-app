@@ -21,6 +21,9 @@ class Nav extends Component {
                     <li>
                         <a href="/trivia">Trivia</a>
                     </li>
+                    <li>
+                        <a href="/newtrivia">New Trivia</a>
+                    </li>
                 </ul>
             </nav>
         )

@@ -10,18 +10,18 @@ const Questions = (props) => {
     return (
         <div>
             <h1>{props.trivias.questions[0].question}</h1>
-            <p>{props.trivias.questions[0].answer1}</p>
-            <p>{props.trivias.questions[0].answer2}</p>
-            <p>{props.trivias.questions[0].answer3}</p>
-            <p>{props.trivias.questions[0].answer4}</p>
+            <p>{props.trivias.questions[0].answers[0].content}</p>
+            <p>{props.trivias.questions[0].answers[1].content}</p>
+            <p>{props.trivias.questions[0].answers[2].content}</p>
+            <p>{props.trivias.questions[0].answers[3].content}</p>
 
                 <br />
 
             <h1>{props.trivias.questions[1].question}</h1>
-            <p>{props.trivias.questions[1].answer1}</p>
-            <p>{props.trivias.questions[1].answer2}</p>
-            <p>{props.trivias.questions[1].answer3}</p>
-            <p>{props.trivias.questions[1].answer4}</p>
+            <p>{props.trivias.questions[1].answers[0].content}</p>
+            <p>{props.trivias.questions[1].answers[1].content}</p>
+            <p>{props.trivias.questions[1].answers[2].content}</p>
+            <p>{props.trivias.questions[1].answers[3].content}</p>
         </div>
     )
 
